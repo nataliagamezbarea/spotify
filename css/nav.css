@@ -1,0 +1,68 @@
+nav {
+  display: flex;
+  grid-area: nav;
+  justify-content: space-between;
+}
+
+#icono-spotify {
+  height: 33px;
+  margin-left: 25px;
+}
+
+/* hijo ( en este caso el input es pulsado */
+.search:focus-within {
+  border: solid 2px white;
+}
+
+.circulo {
+  background-color: #121212;
+  border-radius: 50%;
+  display: flex;
+  padding: 14px;
+}
+
+.circulo.perfil {
+  background-color: #ef6f9b;
+  color: black;
+  height: 10px; /* solucionar el problema del alto */
+}
+
+.search {
+  background-color: #121212;
+  border-radius: 50px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-left: 10px;
+  padding: 10px 14px;
+}
+
+input {
+  background-color: transparent;
+  color: white;
+  margin-left: 10px;
+  outline: none; /* permite quitar el borde al pulsar */
+  text-decoration: none;
+  width: 300px;
+}
+
+.linea {
+  background-color: #b3b3b3;
+  height: 22px;
+  margin: 1px;
+  margin-left: 10px;
+  width: 1px;
+}
+
+#descubrir {
+  background-color: white;
+  border-radius: 50px;
+  color: black;
+  margin-right: 20px;
+  padding: 10px 15px;
+}
+
+.boton-spotify:hover {
+  filter: none;
+  transform: none;
+}

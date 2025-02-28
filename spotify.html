@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Spotify</title>
+<link href="css/body.css" rel="stylesheet"/>
+<link href="css/inicio.css" rel="stylesheet"/>
+<link href="css/biblioteca.css" rel="stylesheet"/>
+<link href="css/nav.css" rel="stylesheet"/>
+<link href="css/reproduccion.css" rel="stylesheet"/>
+<link href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico" rel="icon"/>
+</head>
+<body>
+<div class="container">
+<!-- la navbar está formada por 3 partes :  la parte izquierda , la del centro y la del derecho -->
+<nav>
+<div class="left">
+<a class="boton-spotify" href="index.html">
+<img alt="logo-spotify" id="spotify-logo" src="src/icons/spotify.svg"/>
+</a>
+</div>
+<div class="center">
+<a class="circulo" href="#">
+<img alt="inicio-icono" src="src/icons/home.svg"/>
+</a>
+<div class="search flex">
+<div class="left">
+<img alt="busqueda-icono" src="src/icons/search.svg"/>
+<input placeholder="¿Qué quieres reproducir?" type="text"/>
+</div>
+<div class="right">
+<div class="linea"></div>
+<a href="#">
+<img alt="colecciones-icono" src="src/icons/collections.svg"/>
+</a>
+</div>
+</div>
+<a class="circulo" href="#">
+<img alt="inicio-icono" src="src/icons/add.svg"/>
+</a>
+<!-- cerrar el div de busqueda -->
+</div>
+<!-- cerrar el div del centro -->
+<div class="right">
+<a href="#" id="descubrir"><b>Descubrir Premium</b></a>
+<a class="flex" href="#">
+<img alt="descarga-icono" src="src/icons/download.svg"/>
+<b> Instalar app </b>
+</a>
+<a href="#">
+<img alt="notificacion-icono" src="src/icons/notification.svg"/>
+</a>
+<div class="circulo">
+<div class="circulo perfil">
+<b> N </b>
+</div>
+</div>
+<!-- cerrar el div de circulo -->
+</div>
+<!--  cerrar el div de la derecha de la navbar -->
+</nav>
+<section class="biblioteca">
+<!-- si no me daba problemas en los estilos -->
+<div class="menu flex">
+<div class="left">
+<img alt="libreria-icono" id="collections-icono" src="src/icons/library.svg"/>
+<b id="text-biblioteca">Tu biblioteca</b>
+</div>
+<div class="right">
+<a href="#">
+<img alt="añadir-libreria-icono" src="src/icons/add-library.svg"/>
+</a>
+<a href="#">
+<img alt="flecha-libreria-icono" src="src/icons/arrow-navbar-library.svg"/>
+</a>
+</div>
+</div>
+<div class="buttons">
+<a href="#">Listas</a>
+<a href="#">Artistas</a>
+<a href="#">Álbumes</a>
+</div>
+<div class="reciente flex">
+<div class="left">
+<img alt="busqueda-icono" src="src/icons/search.svg"/>
+</div>
+<div class="right">
+<a class="flex" href="#">
+<p>Recientes</p>
+<img alt="reciente-icono" src="src/icons/recent.svg"/>
+</a>
+</div>
+</div>
+<div class="albums column">
+<div class="album flex">
+<div>
+<img alt="Canciones-que-te-gustan-album" src="src/img/Canciones-que-te-gustan-album.png"/>
+</div>
+<div class="column">
+<h2>Canciones que te gustan</h2>
+<p class="flex nombre-lista">Lista <span>.</span>553 canciones</p>
+</div>
+</div>
+<div class="album flex">
+<div>
+<img alt="Top-songs-album" src="src/img/Top-songs-album.jpg"/>
+</div>
+<div class="column">
+<h2>Your Top Songs 2023</h2>
+<p class="flex nombre-lista">Lista <span>.</span>Spotify</p>
+</div>
+</div>
+<div class="artist flex">
+<div>
+<img alt="Billie-Eilish-Artista" src="src/img/Billie-Eilish-Artista.jpg"/>
+</div>
+<div class="column">
+<h2>Billie Eilish</h2>
+<p class="nombre-artista">Artista</p>
+</div>
+</div>
+<div class="album flex">
+<div>
+<img alt="El-arte-de-ser-nosotros-libro-album" src="src/img/El-arte-de-ser-nosotros-libro-album.jpg"/>
+</div>
+<div class="column">
+<h2>El arte de ser nosotros (playlist oficial)</h2>
+<p class="flex nombre-lista">Lista <span>.</span>Inma Rubiales</p>
+</div>
+</div>
+<div class="artist flex">
+<div>
+<img alt="David-Bisbal-Artista" src="src/img/David-Bisbal-Artista.jpg"/>
+</div>
+<div class="column">
+<h2>David Bisbal</h2>
+<p class="nombre-artista">Artista</p>
+</div>
+</div>
+<div class="album flex">
+<div>
+<img alt="Lista-40-album" src="src/img/Lista-40-album.jpg"/>
+</div>
+<div class="column">
+<h2>Lista de los 40 (Oficial) | 🇪🇸</h2>
+<p class="flex nombre-lista">Lista <span>.</span>los 40</p>
+</div>
+</div>
+<div class="artist flex">
+<div>
+<img alt="Justin-Bieber-Artista" src="src/img/Justin-Bieber-Artista.jpg"/>
+</div>
+<div class="column">
+<h2>Justin Bieber</h2>
+<p class="nombre-artista">Artista</p>
+</div>
+</div>
+<div class="album flex">
+<div>
+<img alt="Top-latino-album" src="src/img/Top-latino-album.jpg"/>
+</div>
+<div class="column">
+<h2>TOP LATINO 2025</h2>
+<p class="flex nombre-lista">Lista <span>.</span>Filtr Éxitos</p>
+</div>
+</div>
+<div class="artist flex">
+<div>
+<img alt="Selena-Gomez-Artista" src="src/img/Selena-Gomez-Artista.jpg"/>
+</div>
+<div class="column">
+<h2>Selena Gomez</h2>
+<p class="nombre-artista">Artista</p>
+</div>
+</div>
+<div class="album flex">
+<div>
+<img alt="Europa-fm-album" src="src/img/Europa-fm-album.jpg"/>
+</div>
+<div class="column">
+<h2>EUROPA FM</h2>
+<p class="flex nombre-lista">Lista <span>.</span>Carlos Calzada</p>
+</div>
+</div>
+<div class="album flex">
+<div>
+<img alt="Top-latino-album-2" src="src/img/Top-latino-album-2.jpg"/>
+</div>
+<div class="column">
+<h2>TOP LATINO 2025</h2>
+<p class="flex nombre-lista">Lista <span>.</span>Filtr Éxitos</p>
+</div>
+</div>
+<div class="album flex">
+<div>
+<img alt="Raggaeton-antiguo-album" src="src/img/Raggaeton-antiguo-album.jpg"/>
+</div>
+<div class="column">
+<h2>RAGGAETON ANTIGUO</h2>
+<p class="flex nombre-lista">Lista <span>.</span>🎤</p>
+</div>
+</div>
+<div class="album flex">
+<div>
+<img alt="El-patio-album" src="src/img/El-patio-album.jpg"/>
+</div>
+<div class="column">
+<h2>Pablo López — El Patio</h2>
+<p class="flex nombre-lista">Lista <span>.</span>Inmaculada Gomez Gil</p>
+</div>
+</div>
+<div class="album flex">
+<div>
+<img alt="Lo-mejor-abraham-mateo-album" src="src/img/Lo-mejor-abraham-mateo-album.jpg"/>
+</div>
+<div class="column">
+<h2>Abraham Mateo - Éxitos: Lo Mejor de Abraham Mateo</h2>
+<p class="flex nombre-lista">Lista <span>.</span>553 canciones</p>
+</div>
+</div>
+<div class="album flex">
+<div>
+<img alt="Olivia-Rodrigo-full-playlist" src="src/img/Olivia-Rodrigo-full-playlist.jpg"/>
+</div>
+<div class="column">
+<h2>Olivia Rodrigo full playlist</h2>
+<p class="flex nombre-lista">Lista <span>.</span>553 canciones</p>
+</div>
+</div>
+</div>
+</section>
+<section class="inicio">
+<div class="buttons">
+<a class="active" href="#">Todo</a>
+<a href="#">Música</a>
+<a href="#">Pódcasts</a>
+</div>
+<div class="albums-inicio albums">
+<div class="album flex">
+<div class="left">
+<div>
+<img alt="Pablo-Lopez-album" src="src/img/Pablo-Lopez-album.jpg"/>
+</div>
+<div>
+<b>Pablo Lopez</b>
+</div>
+</div>
+<a class="container-circle-play right">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+<div class="album flex">
+<div class="left">
+<div>
+<img alt="Top-Latino-album" src="src/img/Top-Latino-album.jpg"/>
+</div>
+<div>
+<b>TOP LATINO 2025</b>
+</div>
+</div>
+<a class="container-circle-play right">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+<div class="album flex">
+<div class="left">
+<div>
+<img alt="Canciones-que-te-gustan-album" src="src/img/Canciones-que-te-gustan-album.png"/>
+</div>
+<div>
+<b>Canciones que te gustan</b>
+</div>
+</div>
+<a class="container-circle-play right">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+<div class="album flex">
+<div class="left">
+<div>
+<img alt="Raggaeton-antiguo-album" src="src/img/Raggaeton-antiguo-album.jpg"/>
+</div>
+<div>
+<b>REGGAETON ANTIGUO</b>
+</div>
+</div>
+<a class="container-circle-play right">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+<div class="album flex">
+<div class="left">
+<div>
+<img alt="Olivia-Rodrigo-album" src="src/img/Olivia-Rodrigo-album.jpg"/>
+</div>
+<div>
+<b>Olivia Rodrigo full playlist</b>
+</div>
+</div>
+<a class="container-circle-play right">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+<div class="album flex">
+<div class="left">
+<div>
+<img alt="Ondas-alfa-album" src="src/img/Ondas-alfa-album.jpg"/>
+</div>
+<div>
+<b>Ondas Alfa</b>
+</div>
+</div>
+<a class="container-circle-play right">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+<div class="album flex">
+<div class="left">
+<div>
+<img alt="Temazos-top-ingles-album" src="src/img/Temazos-top-ingles-album.jpg"/>
+</div>
+<div>
+<b>Temazos muy top en inglés</b>
+</div>
+</div>
+<a class="container-circle-play right">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+<div class="album flex">
+<div class="left">
+<div>
+<img alt="Lo-mejor-abraham-mateo-album" src="src/img/Lo-mejor-abraham-mateo-album.jpg"/>
+</div>
+<div>
+<b>Abraham Mateo - Éxitos: Lo Mejor de Abraham Mateo</b>
+</div>
+</div>
+<a class="container-circle-play right">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<h2 class="title">Artistas populares</h2>
+<div class="artistas-populares flex">
+<div class="flex">
+<div class="artist popular flex column">
+<div class="container-artist">
+<img alt="Bad-Bunny-Artista" class="artist-img-home" src="src/img/Bad-Bunny-Artista.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<h2>Bad Bunny</h2>
+<p class="nombre-artista">Artista</p>
+</div>
+</div>
+<div class="artist popular flex column">
+<div class="container-artist">
+<img alt="Myke-Towers-Artista" class="artist-img-home" src="src/img/Myke-Towers-Artista.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<h2>Myke Towers</h2>
+<p class="nombre-artista">Artista</p>
+</div>
+</div>
+<div class="artist popular flex column">
+<div class="container-artist">
+<img alt="Rauw-Alejandro-Artista" class="artist-img-home" src="src/img/Rauw-Alejandro-Artista.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<h2>Rauw Alejandro</h2>
+<p class="nombre-artista">Artista</p>
+</div>
+</div>
+<div class="artist popular flex column">
+<div class="container-artist">
+<img alt="Karol-G-Artist" class="artist-img-home" src="src/img/Karol-G-Artist.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<h2>Karol G</h2>
+<p class="nombre-artista">Artista</p>
+</div>
+</div>
+<div class="artist popular flex column">
+<div class="container-artist">
+<img alt="Quevedo-Artista" class="artist-img-home" src="src/img/Quevedo-Artista.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<h2>Quevedo</h2>
+<p class="nombre-artista">Artista</p>
+</div>
+</div>
+<div class="artist popular flex column">
+<div class="container-artist">
+<img alt="Rvfv-Artista" class="artist-img-home" src="src/img/Rvfv-Artista.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<h2>Rvfv</h2>
+<p class="nombre-artista">Artista</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="title">Álbumes y sencillos populares</h2>
+<div class="albumes-populares flex">
+<div class="flex">
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="Bad-Bunny-Artista" class="artist-img-home" src="src/img/Bad-Bunny-Artista.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<h2>DeBí TiRAR MáS FOTOS</h2>
+<p class="nombre-artista">Bad Bunny</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="DeBí-TiRAR-MáS-FOTOS-album" src="src/img/DeBí-TiRAR-MáS-FOTOS-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="icono-reproducir-cancion" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<h2>BUENAS NOCHES</h2>
+<p class="nombre-artista">Quevedo</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="LA-CIUDAD-album" src="src/img/LA-CIUDAD-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<h2>LA CIUDAD</h2>
+<p class="nombre-artista">Alleh , Yorghaki</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="Cosa-Nuestra-album" src="src/img/Cosa-Nuestra-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<h2>Cosa Nuestra</h2>
+<p class="nombre-artista">Rauw Alejando</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="Un-Verano-Sin-Ti-album" src="src/img/Un-Verano-Sin-Ti-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<h2>Un Verano Sin Ti</h2>
+<p class="nombre-artista">Bad Bunny</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="Primera-Musa-album" src="src/img/Primera-Musa-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<h2>PRIMERA MUSA</h2>
+<p class="nombre-artista">Omar Courtz</p>
+</div>
+</div>
+</div>
+</div>
+<h2 class="title">Emisoras populares</h2>
+<div class="albumes-populares flex">
+<div class="flex">
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="Radio-1-album" src="src/img/Radio-1-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<p class="nombre-artista">Con Feid , Shakira , Bad Bunny y más</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="Radio-2-album" src="src/img/Radio-2-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<p class="nombre-artista">Con Feid , Arcángel , KAROL G y más</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="Radio-3-album" src="src/img/Radio-3-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<p class="nombre-artista">Con Harry Styles , Snow Patrol, Maroon 5 y más</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="Radio-4-album" src="src/img/Radio-4-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<p class="nombre-artista">Con Viva Suecia , Lori Meyers</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="Radio-5-album" src="src/img/Radio-5-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<p class="nombre-artista">Con Katy Parry , Ed Sheeran , Shawn</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="Radio-9-album" src="src/img/Radio-9-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<p class="nombre-artista">Con Extremoduro, Amaral, Celtas Cortos y más</p>
+</div>
+</div>
+</div>
+</div>
+<h2 class="title">Listas seleccionadas</h2>
+<div class="albumes-populares flex">
+<div class="flex">
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="Lista-1-album" src="src/img/Lista-1-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<p class="nombre-artista">Tu actualización semanal de las canciones más escuchadas ahora mismo en Global.</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="Lista-2-album" src="src/img/Lista-2-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<p class="nombre-artista">Tu actualización semanal de las canciones más escuchadas ahora mismo en España.</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="Lista-3-album" src="src/img/Lista-3-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<p class="nombre-artista">Tu actualización diaria de las canciones más escuchadas ahora mismo en Global.</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="Lista-4-album" src="src/img/Lista-4-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<p class="nombre-artista">Tu actualización diaria de las canciones más escuchadas ahora mismo en España.</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="Lista-5-album" src="src/img/Lista-5-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<p class="nombre-artista">Tu actualización diaria de las canciones más escuchadas ahora mismo en España.</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="Lista-6-album" src="src/img/Lista-6-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<p class="nombre-artista">Tu actualización diaria de las canciones más escuchadas ahora mismo en España.</p>
+</div>
+</div>
+</div>
+</div>
+<h2>Lo que no te puedes perder</h2>
+<div class="albumes-populares flex">
+<div class="flex">
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="No-te-puedes-perder-1-album" src="src/img/No-te-puedes-perder-1-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<p class="nombre-artista">Anima la fiesta con la mejor música.</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="No-te-puedes-perder-2-album" src="src/img/No-te-puedes-perder-2-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<p class="nombre-artista">Los hits de ahora en la playlist más grande de España. Feat. Morad, Rels B, Rvfv</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="No-te-puedes-perder-3-album" src="src/img/No-te-puedes-perder-3-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<p class="nombre-artista">Si está pegao, está aquí. Feat. Myke Towers</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="No-te-puedes-perder-4-album" src="src/img/No-te-puedes-perder-4-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<p class="nombre-artista">El mejor Dance.</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="No-te-puedes-perder-5-album" src="src/img/No-te-puedes-perder-5-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<p class="nombre-artista">💪💪💪</p>
+</div>
+</div>
+<div class="album popular flex column">
+<div class="container_album">
+<img alt="No-te-puedes-perder-7-album" src="src/img/No-te-puedes-perder-7-album.jpg"/>
+<div class="circle-play-container">
+<a class="container-circle-play">
+<img alt="Reproducir-cancion-icono" class="circle-play" src="src/icons/play-song.svg"/>
+</a>
+</div>
+</div>
+<div>
+<p class="nombre-artista">The ultimate rock party playlist!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="flex">
+<div class="column">
+<b>Empresa</b>
+<a href="#"> Acerca de </a>
+<a href="#"> Empleo </a>
+<a href="#">For the Record</a>
+</div>
+<div class="column">
+<b>Comunidades</b>
+<a href="#"> Para artistas </a>
+<a href="#"> Desarrolladores </a>
+<a href="#"> Publicidad </a>
+<a href="#"> Inversores </a>
+<a href="#"> Proveedores </a>
+</div>
+<div class="column">
+<b>Enlaces útiles</b>
+<a href="#"> Asistencia </a>
+<a href="#"> App gratis para móvil</a>
+</div>
+<div class="column">
+<b>Planes de Spotify</b>
+<a href="#"> Planes Premium </a>
+<a href="#"> Premium Individual</a>
+<a href="#"> Premium Duo</a>
+<a href="#"> Premium Familiar</a>
+<a href="#"> Premium Para Estudiantes</a>
+<a href="#"> Spotify Free</a>
+</div>
+<div class="redes-sociales flex">
+<a class="circulo circulo-redes-sociales">
+<img alt="Instagram-icono" src="src/icons/instagram.svg"/>
+</a>
+<a class="circulo circulo-redes-sociales">
+<img alt="Instagram-icono" src="src/icons/twitter.svg"/>
+</a>
+<a class="circulo circulo-redes-sociales">
+<img alt="Instagram-icono" src="src/icons/facebook.svg"/>
+</a>
+</div>
+</footer>
+<div class="linea linea-divisoria">
+<p id="copyright">© 2025 Spotify AB</p>
+</div>
+</section>
+<section class="reproduccion">
+<div class="left">
+<div>
+<img alt="Imagen-reproduccion" class="img-song" src="src/img/Imagen-reproduccion.jpg"/>
+</div>
+<div class="song">
+<h3>WILDFLOWER</h3>
+<p>Billie Eilish</p>
+</div>
+<div class="añadir-playlist">
+<img alt="Icono-añadir-playlist" src="src/icons/add-playlist.svg" title="Añadir a la lista"/>
+</div>
+</div>
+<div class="center">
+<div class="center column">
+<div class="player flex">
+<a href="#">
+<img alt="Cancion-aleatoria-reproduccion" src="src/icons/random-song.svg"/>
+</a>
+<a href="#">
+<img alt="Anterior-reproduccion" src="src/icons/previous.svg"/>
+</a>
+<a class="circulo play-song" href="#">
+<img alt="Reproduccir-reproduccion" src="src/icons/play-song.svg"/>
+</a>
+<a href="#">
+<img alt="Siguiente-reproduccion" src="src/icons/next.svg"/>
+</a>
+<a href="#">
+<img alt="Repetir-cancion-reproduccion" src="src/icons/repeat-song.svg"/>
+</a>
+</div>
+<div class="player flex">
+<p>0:00</p>
+<div class="reproductor"></div>
+<p>4:21</p>
+</div>
+</div>
+</div>
+<div class="right">
+<a href="#">
+<img alt="Sonar-musica-reproduccion" src="src/icons/ringing-song.svg"/>
+</a>
+<a href="#">
+<img alt="Letra-musica-reproduccion" src="src/icons/letra_lyrics.svg"/>
+</a>
+<a href="#">
+<img alt="Conectar-dispositivo-reproduccion" src="src/icons/connect-device.svg"/>
+</a>
+<a href="#">
+<img alt="Cola-cancion-reproduccion" src="src/icons/cola-songs.svg"/>
+</a>
+<a href="#">
+<img alt="Volumen-cancion-reproduccion" src="src/icons/volume-music.svg"/>
+</a>
+<div class="reproductor sonido"></div>
+<a href="#">
+<img alt="Maximizar-cancion-reproduccion" src="src/icons/maximize.svg"/>
+</a>
+</div>
+</section>
+</div>
+<!-- cerramos div del container -->
+</body>
+</html>

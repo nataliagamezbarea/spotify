@@ -1,0 +1,82 @@
+.reproduccion {
+  display: flex;
+  grid-area: reproduccion;
+  justify-content: space-between;
+}
+
+.añadir-playlist {
+  display: flex;
+}
+
+.reproductor {
+  background-color: grey;
+  border-radius: 10px;
+  display: flex;
+  height: 5px;
+  justify-content: space-between;
+  width: 390px;
+}
+
+.sonido {
+  width: 80px;
+}
+
+.añadir-playlist img {
+  align-items: center;
+  display: flex;
+  justify-items: center;
+  width: 16.5px;
+}
+
+.reproduccion .right {
+  margin-right: 20px;
+}
+
+.reproduccion .left {
+  gap: 12px;
+}
+
+.reproduccion h3 {
+  font-size: 14px;
+}
+
+.reproduccion h3:hover,
+.reproduccion .song p:hover {
+  text-decoration: underline;
+}
+
+.reproduccion .song p {
+  color: #a8a8a8;
+  font-size: 12px;
+}
+
+.reproductor:hover {
+  background-color: #1ed760;
+}
+
+.nombre-lista,
+.nombre-artista { 
+  display: flex;
+  font-size: 14px;
+  gap: 5px;
+}
+
+a.circulo.play-song {
+  background: white;
+  padding: 10px;
+}
+
+.player {
+  align-items: center;
+  display: flex;
+  justify-items: center;
+}
+
+.player p {
+  font-size: 12px;
+}
+
+.reproduccion .img-song {
+  padding: 10px;
+  width: 60px;
+}

@@ -1,0 +1,183 @@
+.inicio {
+  background-image: linear-gradient(#050f17 5%, #121212 90%);
+  grid-area: inicio;
+  height: 81vh;
+  overflow-x: hidden; /* barra de debajo */
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.container-circle-play,
+.artist.popular .container-circle-play {
+  align-items: center;
+  background-color: #1ed760;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  margin-right: 20px;
+  padding: 10px;
+  width: 20px;
+  height: auto;
+}
+
+img.circle-img {
+  width: 20px;
+}
+
+.inicio b {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+h2.title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+.inicio a.active {
+  background: white;
+  color: black;
+  margin-left: 30px;
+}
+
+.inicio .buttons {
+  background-color: #050f17;
+  width: 100%;
+}
+
+footer {
+  font-size: 16px;
+  padding: 30px;
+}
+
+footer .column {
+  gap: 10px;
+  padding: 70px;
+}
+
+footer img {
+  width: 100px;
+  height: 20px;
+}
+
+footer .redes-sociales {
+  padding: 60px;
+  padding-top: 90px;
+}
+
+footer .linea-divisoria,
+.p#copyright,
+.linea.linea-divisoria {
+  height: 1px;
+  margin: 10px;
+  width: 100%;
+}
+
+footer .linea-divisoria,
+.p#copyright {
+  padding-top: 10px;
+}
+
+.circulo-redes-sociales {
+  background-color: #2a2a2a;
+  height: 10px;
+  width: 14px;
+}
+
+.popular img {
+  width: 224px;
+}
+
+.artist.popular .nombre-artista {
+  color: #a8a8a8;
+}
+
+.popular:hover {
+  background-color: #333333;
+  border-radius: 10px;
+}
+
+.artist.popular .container-circle-play {
+  margin-bottom: 10px;
+}
+
+.container-artist,
+.container_album {
+  position: relative;
+  padding: 10px;
+}
+
+.container_album img {
+  width: 200px;
+}
+
+.circle-play-container {
+  bottom: 0;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  width: 40px;
+}
+
+.generos {
+  display: flex;
+  max-width: 1500px;
+  overflow-y: scroll;
+}
+
+.genero-container {
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  height: 200px;
+  margin: 10px;
+  width: 100px;
+}
+
+.albums-inicio {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding-left: 10px;
+  padding-top: 70px;
+}
+
+.albums-inicio .album {
+  align-items: center;
+  display: flex;
+  background-color: rgba(215, 215, 215, 0.2);
+}
+
+.albums-inicio .album img {
+  border-radius: 1px;
+  width: 50px;
+}
+
+.album.flex:hover .container-circle-play,
+.artist.popular:hover .container-circle-play {
+  display: flex;
+}
+
+.artistas-populares .circle-play-container {
+  bottom: 20px;
+  right: 30px;
+}
+
+img.artist-img-home {
+  height: 210px;
+  width: 200px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .albums-inicio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .albums-inicio {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
