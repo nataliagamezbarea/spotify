@@ -1,0 +1,129 @@
+@font-face {
+  font-family: Spotify;
+  src: url(/src/fonts/SpotifyMix-Regular.ttf);
+}
+
+@font-face {
+  font-family: Spotify Bold;
+  src: url(/src/fonts/SpotifyMix-Bold.ttf);
+}
+
+* {
+  border: 0;
+  font-family: "Spotify", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  overflow-y: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "nav nav"
+    "biblioteca inicio"
+    "reproduccion reproduccion";
+  grid-template-columns: 0.5fr 2fr;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.left,
+.center,
+.right {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.left {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+h2, h3 {
+  font-weight: normal;
+}
+
+a {
+  color: #a8a8a8;
+  padding-left: 10px; /* mejorar problema borde que sea mas ancho*/
+  text-decoration: none;
+}
+
+a:hover, .circulo:hover {
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
+}
+
+a:hover img {
+  filter: drop-shadow(0 0 0.2px white);
+}
+
+/* general */
+.buttons a {
+  background-color: rgba(215, 215, 215, 0.2);
+  border-radius: 50px;
+  color: white;
+  font-size: 14px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-top: 7px;
+}
+
+b {
+  font-family: "Spotify Bold", Courier, monospace;
+  font-size: 14px;
+}
+
+.albums img, .artists img {
+  border-radius: 10px;
+  width: 50px;
+}
+
+.artist img {
+  border-radius: 50%;
+}
+
+.album.flex:hover, .artist:hover {
+  background-color: #333333;
+}
+
+.album, .artist {
+  margin: 10px;
+}
+
+.relative {
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+}

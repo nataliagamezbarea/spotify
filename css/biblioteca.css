@@ -1,0 +1,36 @@
+.biblioteca {
+  background-color: #121212;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  grid-area: biblioteca;
+  height: 80vh; /* scroll*/
+  justify-content: space-between;
+  overflow-y: scroll;
+  padding: 12px; /* mejorar el posicionamiento de biblioteca */
+}
+
+.menu {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nombre-lista span {
+  font-size: 30px;
+  line-height: 0.2; /* solucionar el . no se alinea */
+}
+
+b#text-biblioteca {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+p.flex.nombre-lista,
+p.nombre-artista {
+  color: #b3b3b3;
+  font-size: 16px;
+  margin-top: 10px;
+}
